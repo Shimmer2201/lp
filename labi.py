@@ -64,9 +64,8 @@ for i in sort_countr:
 print('\nТаблица побед и очков: ')
 
 for i in sort_countr:
-    print(i[0], i[1]+i[2]+i[3], akey(i))
-    """
-
+    print(i[0], i[1]+i[2]+i[3], akey(i)) 
+"""
 
 """
 laba 4 individualka
@@ -97,4 +96,20 @@ def get_company(vuln_code):
 vuln_code = input("Введите код уязвимости: ")
 company = get_company(vuln_code)
 print(f"Компания, выявившая уязвимость: {company}")
+"""
+"""
+РЯД
+import math
+precision = float(input("Введите точность:"))
+if precision <= 0 or precision >= 1: print("Точность должна быть положительной")
+else:
+    elem = 1
+    sum = 0
+    n = 1 
+    while abs(elem)>=precision and n!=0:
+        elem = math.sin(1/math.sqrt(n**(3/4)))
+        sum+=elem
+        n+=1
+print("Сумма ряда:",sum)
+print("Количество членов ряда:",n-1)
 """
